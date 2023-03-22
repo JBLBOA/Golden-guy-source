@@ -109,25 +109,13 @@ class FreeplayState extends MusicBeatState
 
 		FreeplaySaves.loadShit();
 
-		addSong('guy', 0, 'guy', 0xFF000000, 'unlocked');
+		addSong('goldy', 0, 'guy', 0xFF000000, 'unlocked');
 		addSong('midnight', 0, 'orange', 0xFF000000, 'unlocked');
-		addSong('terminated', 0, 'henryt', 0xFF000000, 'unlocked');
-		addSong('lurking', 0, 'guy', 0xFF000000, FlxG.save.data.lurkingLock);
-		addSong('lore', 0, 'guy', 0xFF000000, FlxG.save.data.loreLock);
-		addSong('blubber', 0, 'guy', 0xFF000000, FlxG.save.data.blubberLock);
-		addSong('golden', 0, 'guy', 0xFF000000, FlxG.save.data.goldenLock);
-		addSong('performance', 0, 'guy', 0xFF000000, FlxG.save.data.performanceLock);
-		addSong('bite', 0, 'guy', 0xFF000000, FlxG.save.data.biteLock);
+		addSong('theory', 0, 'guy', 0xFF000000, FlxG.save.data.loreLock);
+		addSong('bronzed', 0, 'guy', 0xFF000000, FlxG.save.data.goldenLock);
+		addSong('me-asuste', 0, 'guy', 0xFF000000, FlxG.save.data.biteLock);
 		addSong('trapped', 0, 'guy', 0xFF000000, FlxG.save.data.trappedLock);
-		addSong('go fish', 0, 'guy', 0xFF000000, FlxG.save.data.gofishLock);
-		addSong('watchful', 0, 'guy', 0xFF000000, FlxG.save.data.watchfulLock);
-		addSong('restless', 0, 'guy', 0xFF000000, FlxG.save.data.restlessLock);
-		addSong('beatbox', 0, 'guy', 0xFF000000, FlxG.save.data.beatboxLock);
-		addSong('showtime', 0, 'guy', 0xFF000000, FlxG.save.data.showtimeLock);
-		addSong('man', 0, 'guy', 0xFF000000, FlxG.save.data.manLock);
-		addSong('followed', 0, 'guy', 0xFF000000, FlxG.save.data.followedLock);
-		addSong('fazfuck news', 0, 'guy', 0xFF000000, FlxG.save.data.fazfuckLock);
-		addSong('criminal', 0, 'guy', 0xFF000000, FlxG.save.data.criminalLock);
+		addSong('barackbox', 0, 'guy', 0xFF000000, FlxG.save.data.beatboxLock);
 		#if !debug 
 			if (everyFreeplaySongBeaten() || FlxG.save.data.millerHere) addSong('miller', 0, 'guy', 0xFF000000, FlxG.save.data.millerLock);
 		#else
