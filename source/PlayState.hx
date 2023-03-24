@@ -72,16 +72,16 @@ class PlayState extends MusicBeatState
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
 	public static var ratingStuff:Array<Dynamic> = [
-		['You Suck!', 0.2], //From 0% to 19%
-		['Shit', 0.4], //From 20% to 39%
-		['Bad', 0.5], //From 40% to 49%
+		['Noob', 0.2], //From 0% to 19%
+		['YOU FUCKIN SUCKS!!!', 0.4], //From 20% to 39%
+		['Very bad', 0.5], //From 40% to 49%
 		['Bruh', 0.6], //From 50% to 59%
 		['Meh', 0.69], //From 60% to 68%
 		['Nice', 0.7], //69%
 		['Good', 0.8], //From 70% to 79%
-		['Great', 0.9], //From 80% to 89%
-		['Sick!', 1], //From 90% to 99%
-		['Perfect!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['BRONZE!', 0.9], //From 80% to 89%
+		['GOLDEN!', 1], //From 90% to 99%
+		['SHINY!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
 	public static var animatedShaders:Map<String, DynamicShaderHandler> = new Map<String, DynamicShaderHandler>();
 	public var modchartTweens:Map<String, FlxTween> = new Map<String, FlxTween>();
@@ -300,7 +300,7 @@ class PlayState extends MusicBeatState
 
 		switch(SONG.song.toLowerCase()) {
 			case 'guy':
-				songComposer = 'kiwiquest';
+				songComposer = 'Yorch-Sketcho';
 			case 'midnight':
 				songComposer = 'kiwiquest';
 			case 'terminated':
@@ -308,14 +308,14 @@ class PlayState extends MusicBeatState
 			case 'lurking':
 				songComposer = 'MewMarissa';
 				if (FlxG.save.data.lurkingLock != 'beaten') FreeplaySaves.lurkingLock = 'unlocked';
-			case 'lore':
-				songComposer = 'kiwiquest';
+			case 'Theory':
+				songComposer = 'Coolgirl';
 				if (FlxG.save.data.loreLock != 'beaten') FreeplaySaves.loreLock = 'unlocked';
 			case 'blubber':
 				songComposer = 'kiwiquest';
 				if (FlxG.save.data.blubberLock != 'beaten') FreeplaySaves.blubberLock = 'unlocked';
-			case 'golden':
-				songComposer = 'Zeroh';
+			case 'Bronze':
+				songComposer = 'cert';
 				if (FlxG.save.data.goldenLock != 'beaten') FreeplaySaves.goldenLock = 'unlocked';
 			case 'performance':
 				songComposer = 'MewMarissa';
@@ -324,7 +324,7 @@ class PlayState extends MusicBeatState
 				songComposer = 'headdzo';
 				if (FlxG.save.data.trappedLock != 'beaten') FreeplaySaves.trappedLock = 'unlocked';
 			case 'bite':
-				songComposer = 'kiwiquest';
+				songComposer = 'Dia_';
 				if (FlxG.save.data.biteLock != 'beaten') FreeplaySaves.biteLock = 'unlocked';
 			case 'go fish':
 				songComposer = 'GalXE';
@@ -348,13 +348,13 @@ class PlayState extends MusicBeatState
 				songComposer = 'findjuno';
 				if (FlxG.save.data.followedLock != 'beaten') FreeplaySaves.followedLock = 'unlocked';
 			case 'fazfuck news':
-				songComposer = 'kiwiquest';
+				songComposer = 'Yorch-Sketcho';
 				if (FlxG.save.data.fazfuckLock != 'beaten') FreeplaySaves.fazfuckLock = 'unlocked';
 			case 'criminal':
 				songComposer = 'River';
 				if (FlxG.save.data.criminalLock != 'beaten') FreeplaySaves.criminalLock = 'unlocked';
 			case 'miller':
-				songComposer = '\nkiwiquest,\nheaddzo,\nfindjuno,\nPolyfield,\nGalxe';
+				songComposer = '\nYorch-Sketcho,\nheaddzo,\nfindjuno,\nPolyfield,\nGalxe';
 				if (FlxG.save.data.millerLock != 'beaten') FreeplaySaves.millerLock = 'unlocked';
 		}
 
