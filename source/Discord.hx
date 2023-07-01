@@ -17,7 +17,7 @@ class DiscordClient
 	{
 		trace("Discord Client starting...");
 		DiscordRpc.start({
-			clientID: "1076177231036027041",
+			clientID: "1124753637277716651",
 			onReady: onReady,
 			onError: onError,
 			onDisconnected: onDisconnected
@@ -42,10 +42,10 @@ class DiscordClient
 	static function onReady()
 	{
 		DiscordRpc.presence({
-			details: "In the Menus",
+			details: "Ourpleando in the menus!",
 			state: null,
 			largeImageKey: 'icon',
-			largeImageText: "FNF: Vs Golden Guy"
+			largeImageText: "Vs Omr boy"
 		});
 	}
 
